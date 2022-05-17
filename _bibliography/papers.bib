@@ -3,6 +3,136 @@
 
 @string{aps = {American Physical Society,}}
 
+@unpublished{campana2d,
+  title     = {Tumbling dynamics of rigid fibres in two-dimensional turbulent shear flow},
+  author    = {Campana, Lorenzo and Bossy, Mireille and Bec, J\'{e}r\'{e}mie},
+  abstract  = {The complex behaviour of inertialess rod-shaped particles embedded in a 
+              two-dimensional turbulent flow, with homogeneous shear, is studied. We introduce a Lagrangian 
+              stochastic model for the rods angular dynamics. It consists in superposing a short-correlated 
+              random component to the steady large-scale mean shear, and can be thereby integrated 
+              analytically. Within the model, an effective anisotropic correlation tensor is introduced, to properly 
+              account for the effect of the mean shear onto the Lagrangian statistics of the turbulent velocity 
+              gradients. Then, single-time orientation statistics obtained from DNS, are compared with the 
+              models results derived from the semi-analytical expression for the stationary distribution of the 
+              folded angle. We propose an alternative definition of tumbling rate applicable  to diffusive 
+              dynamics, in terms of the stationary probability flux of the rods unfolded angle, to address the 
+              two-time statistics of the rods orientation. While the complex behaviour observed in the DNS 
+              shows a non-Gaussian distribution of the unfolded angle in a diffusive regime, the diffusion model 
+              is intended to provide a reasonable qualitative response, even if it is not designed to reproduce 
+              such a behaviour.},
+  year      = {2022},
+  journal   = {(in preparation)},
+  note      = {(in preparation)}
+}
+
+@unpublished{campana3dnumerics,
+  author    = {Campana, Lorenzo and Bossy, Mireille},
+  title     = {Lagrangian stochastic model for the orientation of inertialess rigid spheroids in turbulent flow: an efficient numerical method for {C}{F}{D} approach},
+  abstract  = {In this work we present a stochastic Lagrangian model, 
+              for the orientation of non-spherical particle for a three dimensional case. This model will be 
+              coupled with the stochastic classical hybrid Eulerian/Lagrangian for the description of the 
+              dispersed phase. Moreover, an alternative definition of the rotational modes of a non-spherical 
+              particle in three dimensions will be introduced. We propose and analyse a semi-implicit splitting 
+              numerical method for the non-linear stochastic differential equation (SDE) present in the model 
+              (for which globally Lipschitz condition fails); our goal is to preserve the geometric features hidden 
+              in this system and to obtain convergent schemes. The analysis will be followed by the application 
+              to a semi-real case, considering the non-spherical particles embedded in a homogeneous shear flow.},
+  year      = {2022},
+  journal   = {(in preparation)},
+  note      = {(in preparation)}  
+}
+
+@article{campanaicmf2019,
+  author       = {Campana, Lorenzo and Bossy, Mireille and Minier, Jean Pierre}, 
+  title        = {A Lagrangian stochastic model for rod orientation in turbulent flows},
+  abstract     = {Suspension of anisotropic particles can be found in various applications, e.g. 
+                  industrial manufacturing processes or natural phenomena (micro-organism locomotion, ice crystal 
+                  formation in clouds). Microscopic ellipsoidal bodies suspended in a turbulent fluid flow rotate in 
+                  response to the velocity gradient of the flow. Understanding their orientation is important since it can 
+                  affect the optical or rheological properties of the suspension (e.g. polymeric fluids). In this work, the 
+                  orientation dynamics of rod-like tracer particles, i.e. long ellipsoidal particles (in the limit to infinity of 
+                  the aspect-ratio) is studied. The size of the rod is assumed smaller than the Kolmogorov length scale 
+                  but sufficiently large that its Brownian motion need not be considered. As a result, the local flow 
+                  around a particle can be considered as inertia-free and Stokes flow solutions can be used to relate 
+                  particle rotational dynamics to the local velocity gradient tensor {$A$}. 
+                  The orientation of a rod is described as the normalized solution of the linear ordinary differential 
+                  equation for the separation vector {$r$} between two fluid tracers. Separation evolves under 
+                  the action of the velocity gradient tensor. Simultaneously, a re-normalization procedure 
+                  is introduced to obtain the unit-vector p aligned with the rod. In this frame, the 
+                  rod orientation is described by a Lagrangian stochastic model, assuming that cumulative effects of 
+                  the velocity gradient tensor on the observation time interval fluctuate with a Gaussian distribution. 
+                  Indeed, cumulative velocity gradient fluctuations are here represented by a white-noise tensor such 
+                  that it preserves the incompressibility condition. Large observation timescale (overall objective of 
+                  the work) justifies the Gaussian distribution hypotheses, with a decorrelation timescale equal to the 
+                  Kolmogorov one. Finally, the Lagrangian stochastic model is tested in the case of homogeneous 
+                  isotropic turbulence.},
+  journal      = {10th International Conference on Multiphase Flow (ICMF 2019)},
+  year         = {2019},
+  month        = {5},
+  organization = {ERCOFTAC},
+  pdf          = {ICMF_Paper_Campana.pdf},
+  hal          = {hal-02369274}
+}
+
+@thesis{campanaphdthesis,
+  author       = {Campana, Lorenzo}, 
+  title        = {Stochastic modelling of non-spherical particles in turbulence},
+  abstract     = {The thesis focuses on the dynamics of anisotropic particles in turbulence exploiting stochastic Lagrangian methods. 
+                  The development of models that reach an acceptable compromise between simplicity and accuracy and that can be used 
+                  as predictive tools in industrial computational fluid dynamics (CFD) is needed for progressing in the field of medical, 
+                  environmental and industrial processes. A stochastic orientation model is studied in two-dimensional turbulent flow 
+                  with homogeneous shear; the results are compared with direct numerical simulations (DNS).
+                  We look for analytical results, by scrutinising the effect of the anisotropies and by extending the notion of rotational 
+                  dynamics in the stochastic framework. The two-dimensional model is then extended to the three-dimensional case. 
+                  We introduce a numerical scheme which is able to to preserve the dynamics at reasonable computational costs 
+                  and we analyse its convergence. We develop a scheme of splitting decomposition of the stochastic differential 
+                  equations (SDE), in order to overcome the typical instability problems of the Euler-Maruyama method; 
+                  we obtain a mean-square strong convergence of order 1/2 and a weak convergence of order 1.
+                  Finally, the model and  the numerical scheme are implemented in an industrial CFD code (Code_Saturne)
+                  and they are used to study the orientational and rotational behaviour of anisotropic inertia-free particles in a turbulent channel flow. 
+                  The stochastic Lagrangian model for the orientation in the CFD code reproduces with some limits the orientation and
+                  rotation statistics of the DNS. The results obtained on the orientation and rotation of aspherical particles in turbulence 
+                  give new insight into large scale motions both, in two-dimensional space of interest for geophysical flows, and in three-dimensional industrial applications.
+},
+  school       = {Universit{\'e} C{\^o}te d'Azur},
+  year         = {2022},
+  month        = {3},
+  pdf          = {PhdThesis_Campana_Lorenzo.pdf},
+  hal          = {tel-03666030}
+}
+
+@thesis{campanamastersthesis,
+  author       = {Campana, Lorenzo}, 
+  title        = {Turbulent Drag Reduction by superhydrophobic surfaces},
+  abstract     = {The superhydrophobic surfaces (SHSs) were initially inspired by the unique 
+                  water-repellent properties of the lotus leaf and can be employed to produce drag reduction in 
+                  turbulent flows. The effects of a SHS consist on micro-grooves which can entrap gas pockets 
+                  when sub-merged in the water, i.e. at the groove an interface liquid-gas with a no zero velocity is 
+                  present. In this work, direct numerical simulations (DNS) are used to investigate the drag-reducing 
+                  performance of SHS in a turbulent pipe flow. The configuration of SHS influences the drag 
+                  reduction within the pipe. The drag appears reduced in the SHS cases with respect to the smooth 
+                  classical case. This effect strongly depends on the geometrical features of the surfaces. The 
+                  increase of drag reduction is remarkable in the cases with a large groove width. To understand the 
+                  phenomena linked to this mechanism, the turbulent vortical structures are studied. These last are 
+                  significantly modified compared to the smooth case. The result obtained in this work underlines that 
+                  the contribution of the Reynolds stress within the pipe rises with the width of groove, providing a 
+                  negative contribution to the drag reduction. This effect is exceeded by the contribution of the slip 
+                  velocity at the wall. SHS technology represents an emergent application in many fields of research 
+                  and in a broad spectrum of industrial and everyday life applications.},
+  school       = {University of Rome, "La Sapienza"},
+  year         = {2017},
+  month        = {3},
+  pdf          = {MasterThesis_Campana_Lorenzo.pdf}
+}
+
+
+
+
+
+
+
+
+
 @book{einstein1956investigations,
   bibtex_show={true},
   title={Investigations on the Theory of the Brownian Movement},
@@ -65,8 +195,8 @@
   year={1905}
 }
 
-@article{einstein1905electrodynamics,
-  title={On the electrodynamics of moving bodies},
-  author={Einstein, A.},
-  year={1905}
-}
+
+
+
+
+
